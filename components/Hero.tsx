@@ -4,11 +4,11 @@ import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FlipWords } from "@/components/ui/flip-words";
-
+import { BackgroundBeams } from "./ui/background-beams";
+import { ModelViewer } from "./model-viewer";
 
 const Hero = () => {
-
-  const words = ["career", "salary[2x]", "opportunities", "personality", "health" ];
+  const words = ["career", "salary", "opportunities"];
   return (
     <div className="pb-20 pt-36">
       {/**
@@ -32,8 +32,9 @@ const Hero = () => {
        *  change bg color to bg-black-100 and reduce grid color from
        *  0.2 to 0.03
        */}
+      <BackgroundBeams />
       <div
-        className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full dark:bg-black-100 bg-black2 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         {/* Radial gradient for the container to give a faded look */}
@@ -46,8 +47,6 @@ const Hero = () => {
 
       <div className="flex justify-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          
-
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            *
@@ -58,15 +57,15 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           /> */}
           <div className="h-[40rem] flex flex-col justify-center items-center px-4">
-              <p className="uppercase tracking-widest whitespace-nowrap text-s text-center text-neutral-400 my-4 max-w-80">
-                LEARN W1TH THE MAGIC OF THE W3B
-              </p>
-              <div className="text-6xl mx-auto font-bold text-neutral-600 dark:text-neutral-400 text-center">
-                Learn to code with expert teachers and<br />
-                boost your
-                <FlipWords words={words} /> <br />
-              </div>
-           </div>
+            <p className="uppercase tracking-widest whitespace-nowrap text-s text-center text-neutral-400 my-4 max-w-80">
+              LEARN W1TH THE MAGIC OF THE W3B
+            </p>
+            <div className="text-6xl mx-auto font-bold text-neutral-600 dark:text-neutral-400 text-center">
+              Learn to code with expert teachers and boost your <br />
+              <FlipWords words={words} /> <br />
+            </div>
+            <ModelViewer />
+          </div>
 
           {/**
            * / <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">

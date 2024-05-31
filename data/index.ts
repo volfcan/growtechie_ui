@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Course", link: "#projects" },
+  { name: "Course", link: "#courses" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -95,6 +95,21 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/fm.svg", "/figma.svg"],
     link: "/ui.apple.com",
   },
+  {
+    id: 5,
+    title: "Data Analytics",
+    des: "Analyzing data using tools like Excel, PowerBi & Tableau.",
+    img: "/shape3-sat.jpg",
+    iconLists: ["/next.svg", "/python.svg", "/ts.svg"],
+    link: "/ui.apple.com",
+  },
+   { id: 6,
+    title: "Software Testing",
+    des: "Learn testing, both functional as well as Automation",
+    img: "/shape3-sat.jpg",
+    iconLists: ["/next.svg", "/tail.svg", "/fm.svg", "/figma.svg"],
+    link: "/ui.apple.com",
+  }
 ];
 
 export const testimonials = [

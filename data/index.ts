@@ -1,6 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "About", link: "#projects" },
+  { name: "Courses", link: "#courses" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -100,7 +100,7 @@ export const projects = [
     title: "Data Analytics",
     des: "Explore the flowing data behind every aspect of your life & Analyze them.",
     img: "/shape2-sat.jpg",
-    iconLists: ["/next.svg", "/python.svg", "/ts.svg"],
+    iconLists: ["/powerbi.svg", "/python.svg", "/sql.svg", "/tableau.svg"],
     link: "/ui.yoom.com",
   },
      {

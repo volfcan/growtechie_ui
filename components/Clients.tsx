@@ -23,6 +23,7 @@ const Clients = () => {
             direction="right"
             speed="slow"
           />
+          <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h1>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">

@@ -10,7 +10,7 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 // import { ModelViewer } from "@/components/model-viewer";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+// import { BackgroundBeams } from "@/components/ui/background-beams";
 import Courses from "@/components/Courses";
 
 const Home = () => {
@@ -20,12 +20,11 @@ const Home = () => {
         <FloatingNav navItems={navItems} />
         {/* <BackgroundBeams /> */}
         <Hero />
-        {/* <ModelViewer /> */}
         <Grid />
-
         <Courses />
         <Clients />
         <Experience />
+        {/* <ModelViewer/> */}
         <Approach />
         <Footer />
       </div>

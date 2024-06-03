@@ -116,34 +116,40 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "I took a PowerBI course and then expanded my learning to SQL and Python with Growtechie. I appreciated that Growtechie didn't ask for money, allowed negotiation, and didn't make false promises about job placement. I found the prices reasonable. Thanks for the learning experience..",
+    name: "Madhura Bijawe",
+    title: "Aspiring Data Analyst/Student",
+  },
+  {
+    quote:
+      "Initially hesitant due to the absence of a website, I found Growtechie on LinkedIn. Impressed by a demo class with Ramakrushna, despite occasional scolding, I appreciated his teaching style. Growtechie's commitment to affordable courses without false promises made it my ideal learning space.",
+    name: "Nikita Bhole",
+    title: "Student",
+  },
+  {
+    quote:
+      "GrowTechie's Python training exceeded expectations with a practical, project-oriented approach. Expert instructors made complex concepts engaging. Hands-on learning through real-world projects boosted confidence. Comprehensive curriculum covered basics and advanced topics. Highly recommend!",
+    name: "Amit Kapoor",
+    title: "MBA Student",
+  },
+  {
+    quote:
+      "Highly recommend GrowTechie's SQL and Power BI training! Exceeded expectations with a focus on real-world applications and project-based learning. Solid foundation in SQL for data manipulation, and standout Power BI section for expert guidance in creating actionable dashboards. Well-crafted for today's data-centric environment.",
+    name: "Puja Samal",
+    title: "SQL Developer: CGI",
+  },
+  {
+    quote:
+      "Collaborating with Growtechie was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional sessions were evident throughout my course journey. They have really enthusiastics tutors which truly stands out. If you're seeking to elevate your tech career and elevate your brand, Growtechie is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+      "Collaborating with Growtechie was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional sessions were evident throughout my course journey. They have really enthusiastics tutors which truly stands out. If you're seeking to elevate your tech career and elevate your brand, Growtechie is the ideal partner.",
+    name: "Rohit Kullkarni",
+    title: "Data Scientist",
+  }
 ];
 
 export const companies = [
@@ -214,13 +220,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/your-profile",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/growtechie",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/company/growtechieind",
   },
 ];
+

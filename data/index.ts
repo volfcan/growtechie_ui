@@ -100,7 +100,7 @@ export const projects = [
     title: "Data Analytics",
     des: "Explore the flowing data behind every aspect of your life & Analyze them.",
     img: "/shape2-sat.jpg",
-    iconLists: ["/powerbi.svg", "/python.svg", "/sql.svg", "/tableau.svg"],
+    iconLists: ["/python.svg", "/sql.svg", "/tableau.svg"],
     link: "/ui.yoom.com",
   },
      {
@@ -119,24 +119,28 @@ export const testimonials = [
       "I took a PowerBI course and then expanded my learning to SQL and Python with Growtechie. I appreciated that Growtechie didn't ask for money, allowed negotiation, and didn't make false promises about job placement. I found the prices reasonable. Thanks for the learning experience..",
     name: "Madhura Bijawe",
     title: "Aspiring Data Analyst/Student",
+    img: "/Madhura.jpg"
   },
   {
     quote:
       "Initially hesitant due to the absence of a website, I found Growtechie on LinkedIn. Impressed by a demo class with Ramakrushna, despite occasional scolding, I appreciated his teaching style. Growtechie's commitment to affordable courses without false promises made it my ideal learning space.",
     name: "Nikita Bhole",
     title: "Student",
+    img:"/Nikita.jpg"
   },
   {
     quote:
       "GrowTechie's Python training exceeded expectations with a practical, project-oriented approach. Expert instructors made complex concepts engaging. Hands-on learning through real-world projects boosted confidence. Comprehensive curriculum covered basics and advanced topics. Highly recommend!",
     name: "Amit Kapoor",
     title: "MBA Student",
+    img:"/Amit.jpg"
   },
   {
     quote:
       "Highly recommend GrowTechie's SQL and Power BI training! Exceeded expectations with a focus on real-world applications and project-based learning. Solid foundation in SQL for data manipulation, and standout Power BI section for expert guidance in creating actionable dashboards. Well-crafted for today's data-centric environment.",
     name: "Puja Samal",
     title: "SQL Developer: CGI",
+    img:"/Puja.jpg"
   },
   {
     quote:
@@ -149,6 +153,7 @@ export const testimonials = [
       "Collaborating with Growtechie was an absolute pleasure. Their professionalism, promptness, and dedication to delivering exceptional sessions were evident throughout my course journey. They have really enthusiastics tutors which truly stands out. If you're seeking to elevate your tech career and elevate your brand, Growtechie is the ideal partner.",
     name: "Rohit Kullkarni",
     title: "Data Scientist",
+    img:"/Rohit.jpg"
   }
 ];
 

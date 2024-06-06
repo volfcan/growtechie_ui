@@ -3,9 +3,10 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
 
-import { projects } from "@/data";
+import { courses } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { ModelViewer } from "./model-viewer";
+import { GlobeDemo } from "./globe-demo";
 
 const Courses = () => {
   return (
@@ -14,7 +15,7 @@ const Courses = () => {
         Some of the available <span className="text-purple">courses</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {courses.map((item) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
@@ -29,16 +30,21 @@ const Courses = () => {
                   // style={{ backgroundColor: "#13162D" }}
                 >
                   {/* <img src="/bg.png" alt="bgimg" /> */}
+                  {/* <ModelViewer /> */}
+                  {/* <GlobeDemo /> */}
+
                   <Image
                     src={item.img}
                     alt="cover"
                     style={{ objectFit: "cover" }}
-                    // width={190}
-                    // height={180}
+                    // height={100}
+                    // width={width}
+                    // priority
                     layout="fill"
+                    priority
+                    quality={100}
                     className="bg-cover z-10 absolute bg-center"
                   />
-                  <ModelViewer />
                 </div>
               </div>
 

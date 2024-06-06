@@ -45,6 +45,7 @@ const Hero = () => {
         />
       </div>
 
+      <ModelViewer />
       <div className="flex justify-center relative z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           {/**
@@ -64,7 +65,6 @@ const Hero = () => {
               Learn to code with expert teachers and boost your <br />
               <FlipWords words={words} /> <br />
             </div>
-            <ModelViewer />
           </div>
 
           {/**

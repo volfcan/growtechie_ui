@@ -8,18 +8,18 @@ import { Hero3DCard } from "./hero-3d-card";
 import CardModel from "./card-model";
 import { SimpleGrid } from "@chakra-ui/react";
 
-const Models = (props: any) => {
-  const models = props.data.models;
+// const Models = (props: any) => {
+//   const models = props.data.models;
 
-  const displayModels = models.map((model: any, idx: any) => (
-    <CardModel key={idx} model={model}></CardModel>
-  ));
-  return (
-    <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 6 }}>
-      {displayModels}{" "}
-    </SimpleGrid>
-  );
-};
+//   const displayModels = models.map((model: any, idx: any) => (
+//     <CardModel key={idx} model={model}></CardModel>
+//   ));
+//   return (
+//     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 6 }}>
+//       {displayModels}{" "}
+//     </SimpleGrid>
+//   );
+// };
 
 const Experience: NextPage = (props: any) => {
   return (
@@ -57,7 +57,7 @@ const Experience: NextPage = (props: any) => {
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"
               /> */}
-              <Models data={props.data} />
+              {/* <Models data={props.data} /> */}
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}

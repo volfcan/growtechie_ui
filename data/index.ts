@@ -1,5 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
+
+  { name: "Projects", link: "#projects" },
   { name: "Courses", link: "#courses" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
@@ -61,7 +63,7 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const courses = [
   {
     id: 1,
     title: "Full-stack web development",

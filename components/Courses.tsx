@@ -3,8 +3,12 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
 
+
+import { courses } from "@/data";
+import { PinContainer } from "./ui/Pin";
 import { projects } from "@/data";
 import { ModelViewer } from "./model-viewer";
+import { GlobeDemo } from "./globe-demo";
 
 const Courses = () => {
   return (
@@ -13,22 +17,32 @@ const Courses = () => {
         Some of the available <span className="text-purple">courses</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+        {courses.map((item) => (
           <div
             className="course-card lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <div className="p-4 border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div className="relative max-w-140 w-full h-full overflow-hidden lg:rounded-3xl">
+                <div
+                  className="relative max-w-140 w-full h-full overflow-hidden lg:rounded-3xl"
+                  // style={{ backgroundColor: "#13162D" }}
+                >
+                  {/* <img src="/bg.png" alt="bgimg" /> */}
+                  {/* <ModelViewer /> */}
+                  {/* <GlobeDemo /> */}
                   <Image
                     src={item.img}
                     alt="cover"
                     style={{ objectFit: "cover" }}
+                    // height={100}
+                    // width={width}
+                    // priority
                     layout="fill"
+                    priority
+                    quality={100}
                     className="bg-cover z-10 absolute bg-center"
                   />
-                  <ModelViewer />
                 </div>
               </div>
 

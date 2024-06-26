@@ -1,15 +1,38 @@
 import React from "react";
 
+import type { NextPage, GetStaticProps } from "next";
 import { workExperience } from "@/data";
+import { loadData } from "@/lib/load-data";
 import { Button } from "./ui/MovingBorders";
+import { Hero3DCard } from "./hero-3d-card";
+import CardModel from "./card-model";
+import { SimpleGrid } from "@chakra-ui/react";
 
-const Experience = () => {
+// const Models = (props: any) => {
+//   const models = props.data.models;
+
+//   const displayModels = models.map((model: any, idx: any) => (
+//     <CardModel key={idx} model={model}></CardModel>
+//   ));
+//   return (
+//     <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 6 }}>
+//       {displayModels}{" "}
+//     </SimpleGrid>
+//   );
+// };
+
+const Experience: NextPage = (props: any) => {
   return (
+    <div>
     <div className="py-20 w-full">
       <h1 className="heading">
         Additional <span className="text-purple">Things We Offer</span>
       </h1>
 
+        <h1 className="heading">
+          What you will <span className="text-purple">learn</span>
+        </h1>
+      </div>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
           <Button
@@ -20,6 +43,7 @@ const Experience = () => {
             style={{
               //   add these two
               //   you can generate the color from here https://cssgradient.io/
+
               background: "rgb(4,7,29)",
               backgroundColor:
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
@@ -30,11 +54,12 @@ const Experience = () => {
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <img
+              {/* <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"
-              />
+              /> */}
+              {/* <Models data={props.data} /> */}
               <div className="lg:ms-5">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
                   {card.title}
@@ -50,5 +75,8 @@ const Experience = () => {
     </div>
   );
 };
-
+export const getStaticProps: GetStaticProps = async (context) => {
+  const data = await loadData();
+  return { props: { data } };
+};
 export default Experience;

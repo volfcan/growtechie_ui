@@ -24,8 +24,10 @@ import { SimpleGrid } from "@chakra-ui/react";
 const Experience: NextPage = (props: any) => {
   return (
     <div>
-      <div className="py-20 w-full">
-        {/* <Hero3DCard /> */}
+    <div className="py-20 w-full">
+      <h1 className="heading">
+        Additional <span className="text-purple">Things We Offer</span>
+      </h1>
 
         <h1 className="heading">
           What you will <span className="text-purple">learn</span>

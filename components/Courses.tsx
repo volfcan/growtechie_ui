@@ -3,27 +3,26 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import Image from "next/image";
 
+
 import { courses } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { projects } from "@/data";
 import { ModelViewer } from "./model-viewer";
 import { GlobeDemo } from "./globe-demo";
 
 const Courses = () => {
   return (
-    <div className="py-20">
+    <section id="courses" className="py-20">
       <h1 className="heading">
         Some of the available <span className="text-purple">courses</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {courses.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            className="course-card lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
+            <div className="p-4 border border-gray-200 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative max-w-140 w-full h-full overflow-hidden lg:rounded-3xl"
@@ -32,7 +31,6 @@ const Courses = () => {
                   {/* <img src="/bg.png" alt="bgimg" /> */}
                   {/* <ModelViewer /> */}
                   {/* <GlobeDemo /> */}
-
                   <Image
                     src={item.img}
                     alt="cover"
@@ -72,12 +70,12 @@ const Courses = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <Image
-                        src={icon}
-                        alt="icons"
-                        className="p-2"
-                        layout="fill"
-                      />
+                        <Image
+                          src={icon}
+                          alt="icons"
+                          className="p-2"
+                          layout="fill"
+                        />
                     </div>
                   ))}
                 </div>
@@ -89,11 +87,22 @@ const Courses = () => {
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>
               </div>
-            </PinContainer>
+            </div>
           </div>
         ))}
       </div>
-    </div>
+<style jsx>{`
+  .course-card {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+  }
+
+  .course-card:hover {
+    transform: perspective(1000px) rotateX(20deg);
+  }
+`}</style>
+
+    </section>
   );
 };
 
